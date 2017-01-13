@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\OpenGL">
+      <UniqueIdentifier>{66543d57-3923-470d-8a14-a764f6ae2b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{35b2cea6-0e7a-45a9-8654-940b32347946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\Texture">
+      <UniqueIdentifier>{63694143-e9ca-4ee5-8121-896e91dfa0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\Shader">
+      <UniqueIdentifier>{066de802-3d9c-4057-9e1c-e74b6cdb2964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL\Renderer Testing">
+      <UniqueIdentifier>{05e3c29e-d8d0-4b5b-939c-088534d4a54d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\OpenGLMemoryTracker.cpp">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufferDataLoader.cpp">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display.cpp">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StaticInput.cpp">
+      <Filter>Header Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLCamera.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cpp">
+      <Filter>Header Files\OpenGL\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureLoader.cpp">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ArrayTexture.cpp">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageLoader.cpp">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sprite.cpp">
+      <Filter>Header Files\OpenGL\Renderer Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FPS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenGLMemoryTracker.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufferDataLoader.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Display.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StaticInput.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture.h">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader.h">
+      <Filter>Header Files\OpenGL\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLLoader.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ArrayTexture.h">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureLoader.h">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLTexture.h">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImageLoader.h">
+      <Filter>Header Files\OpenGL\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer.h">
+      <Filter>Header Files\OpenGL\Renderer Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sprite.h">
+      <Filter>Header Files\OpenGL\Renderer Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
