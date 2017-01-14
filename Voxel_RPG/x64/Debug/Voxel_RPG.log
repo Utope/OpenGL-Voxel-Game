@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\bobby smith\programming\opengl-voxel-game\voxel_rpg\src\camera.h(122): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Voxel_RPG.vcxproj -> C:\Users\Bobby Smith\Programming\OpenGL-Voxel-Game\x64\Debug\Voxel_RPG.exe
+  Voxel_RPG.vcxproj -> C:\Users\Bobby Smith\Programming\OpenGL-Voxel-Game\x64\Debug\Voxel_RPG.pdb (Full PDB)

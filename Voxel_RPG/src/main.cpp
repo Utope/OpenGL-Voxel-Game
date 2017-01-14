@@ -13,6 +13,7 @@
 #include "ArrayTexture.h"
 #include "Texture.h"
 #include "Timer.h"
+#include "Texture2DArray.h"
 #define WIDTH 640
 #define HEIGHT 480
 
@@ -93,14 +94,17 @@ int main(int argc, char** argv) {
 	shaderArrayTest.load();
 	shaderArrayTest.link();
 
-	ArrayTexture aryTex(GL_CLAMP_TO_BORDER, GL_CLAMP_TO_BORDER,GL_NEAREST,GL_NEAREST);
-	aryTex.addImagePaths("..\\resources\\images\\healer_1.png");
-	aryTex.addImagePaths("..\\resources\\images\\healer_2.png");
-	//aryTex.addImagePaths("..\\resources\\images\\healer_2.png");
-	aryTex.load();
-
-	Texture tex2D("..\\resources\\images\\DragonIcon.png", GL_CLAMP_TO_BORDER, GL_CLAMP_TO_BORDER, GL_LINEAR, GL_LINEAR);
-	tex2D.load();
+	Texture2DArray testArray("Testing Textures");
+	testArray.addTexture("..\\resources\\images\\healer_1.png");
+	testArray.addTexture("..\\resources\\images\\healer_2.png");
+	testArray.addTexture("..\\resources\\images\\healer_4.png");
+	testArray.addTexture("..\\resources\\images\\healer_5.png");
+	testArray.addTexture("..\\resources\\images\\healer_6.png");
+	testArray.addTexture("..\\resources\\images\\healer_7.png");
+	testArray.addTexture("..\\resources\\images\\healer_8.png");
+	testArray.addTexture("..\\resources\\images\\healer_9.png");
+	testArray.addTexture("..\\resources\\images\\healer_10.png");
+	testArray.load();
 
 	Timer timer;
 	timer.start();
@@ -116,7 +120,7 @@ int main(int argc, char** argv) {
 			//spriteCounter++;
 		}
 		
-		if (timer.milliseconds() > 100) {
+		if (timer.milliseconds() > 300) {
 			spriteCounter++;
 			timer.updateStart();
 		}
@@ -125,11 +129,11 @@ int main(int argc, char** argv) {
 		glBindVertexArray(vao);
 
 		shaderArrayTest.loadMat4x4(0, false, camera.getMatrixVP());
-		shaderArrayTest.loadFloat(1, (float)(spriteCounter%2));
+		shaderArrayTest.loadFloat(1, (float)(spriteCounter%10));
 		
 		glActiveTexture(GL_TEXTURE0);
 		//glBindTexture(GL_TEXTURE_2D_ARRAY, textureArray);
-		glBindTexture(GL_TEXTURE_2D_ARRAY, aryTex.getID());
+		glBindTexture(GL_TEXTURE_2D_ARRAY, testArray.getID());
 	
 		glDrawArrays(GL_TRIANGLES, 0, 6);
 		glBindVertexArray(0);

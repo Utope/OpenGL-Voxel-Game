@@ -5,19 +5,18 @@
 class ArrayTexture : public GLTexture  {
 public:
 	
-	// Inherited via GLTexture
-	virtual GLuint getID() override;
-	virtual int getWidth() override;
-	virtual int getHeight() override;
-	virtual int getDepth() override;
-	virtual void load() override;
-	virtual void unLoad() override;
+	GLuint getID();
+	int getWidth();
+	int getHeight();
+	int getDepth();
+	void load();
+	void unLoad();
 
 	ArrayTexture(std::vector<std::string>, GLenum uWrap, GLenum vWrap, GLenum magFilter, GLenum minFilter);
 	ArrayTexture(GLenum uWrap, GLenum vWrap, GLenum magFilter, GLenum minFilter);
 	
-	void addImagePaths(std::string);
-	void addImagePaths(std::vector<std::string>);
+	void addImages(std::string);
+	void addImages(std::vector<std::string>);
 	std::vector<std::string>& getImagePaths();
 	
 	GLenum getMagFilter();
@@ -31,6 +30,9 @@ public:
 	void setSWrap(GLenum);
 
 	void updateTextureSettings();
+
+	void setMaxHeight();
+	void setMaxWidth();
 
 protected:
 	std::vector<std::string> m_imagePaths;

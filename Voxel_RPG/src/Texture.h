@@ -8,13 +8,13 @@
 
 class Texture : public GLTexture {
 public:
-	// Inherited via GLTexture
-	virtual GLuint getID() override;
-	virtual int getWidth() override;
-	virtual int getHeight() override;
-	virtual int getDepth() override;
-	virtual void load() override;
-	virtual void unLoad() override;
+	
+	GLuint getID() = 0;
+	int getWidth() = 0;
+	int getHeight() = 0;
+	int getDepth() = 0;
+	void load() = 0;
+	void unLoad() = 0;
 	
 	Texture(std::string imagepath, GLenum tWrap, GLenum sWrap, GLenum magFilter, GLenum minFilter );
 

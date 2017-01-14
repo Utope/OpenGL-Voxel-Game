@@ -41,12 +41,12 @@ ArrayTexture::ArrayTexture(GLenum uWrap, GLenum vWrap, GLenum magFilter, GLenum 
 	m_minFilter = minFilter;
 }
 
-void ArrayTexture::addImagePaths(std::string newPath) {
+void ArrayTexture::addImages(std::string newPath) {
 	m_imagePaths.push_back(newPath);
 	m_depth = m_imagePaths.size();
 }
 
-void ArrayTexture::addImagePaths(std::vector<std::string> newPaths) {
+void ArrayTexture::addImages(std::vector<std::string> newPaths) {
 	for (unsigned int i = 0; i < newPaths.size(); i++) {
 		m_imagePaths.push_back(newPaths[i]);
 	}
