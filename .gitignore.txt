@@ -1,5 +1,5 @@
 #Ignore file
-lib/
-Debug/
-x86/
-x64/
+lib/*
+Debug/*
+x86/*
+x64/*
